@@ -1,0 +1,348 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:myLib
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L HEF4794B U2
+U 1 1 5ABE6DEC
+P 3750 3125
+F 0 "U2" H 3750 3750 50  0000 C CNN
+F 1 "HEF4794B" H 3750 3675 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-16_3.9x9.9mm_Pitch1.27mm" H 3750 2575 50  0001 C CIN
+F 3 "" H 3750 3525 50  0001 C CNN
+	1    3750 3125
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X09 J1
+U 1 1 5ABE8240
+P 1775 2350
+F 0 "J1" H 1775 2850 50  0000 C CNN
+F 1 "CONN_01X09" V 1875 2350 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x09_Pitch2.54mm" H 1775 2350 50  0001 C CNN
+F 3 "" H 1775 2350 50  0001 C CNN
+	1    1775 2350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X09 J2
+U 1 1 5ABE8510
+P 5600 2300
+F 0 "J2" H 5600 2800 50  0000 C CNN
+F 1 "CONN_01X09" V 5700 2300 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x09_Pitch2.54mm" H 5600 2300 50  0001 C CNN
+F 3 "" H 5600 2300 50  0001 C CNN
+	1    5600 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 1425 2650 1425
+Wire Wire Line
+	2650 1425 2675 1950
+Wire Wire Line
+	2675 1950 1975 1950
+Wire Wire Line
+	3350 1525 2750 1525
+Wire Wire Line
+	2750 1525 2775 2050
+Wire Wire Line
+	2775 2050 1975 2050
+Wire Wire Line
+	3350 1625 2825 1625
+Wire Wire Line
+	2825 1625 2825 2150
+Wire Wire Line
+	2825 2150 1975 2150
+Wire Wire Line
+	3350 1725 2875 1725
+Wire Wire Line
+	2875 1725 2900 2250
+Wire Wire Line
+	2900 2250 1975 2250
+Wire Wire Line
+	3350 1825 2925 1825
+Wire Wire Line
+	2925 1825 2950 2350
+Wire Wire Line
+	2950 2350 1975 2350
+Wire Wire Line
+	3350 1925 3000 1925
+Wire Wire Line
+	3000 1925 3025 2450
+Wire Wire Line
+	3025 2450 1975 2450
+Wire Wire Line
+	3350 2025 3075 2025
+Wire Wire Line
+	3075 2025 3100 2550
+Wire Wire Line
+	3100 2550 1975 2550
+Wire Wire Line
+	3350 2125 3200 2125
+Wire Wire Line
+	3200 2125 3200 2650
+Wire Wire Line
+	3200 2650 1975 2650
+Wire Wire Line
+	3350 2225 3225 2225
+Wire Wire Line
+	3225 2225 3250 2750
+Wire Wire Line
+	3250 2750 1975 2750
+Wire Wire Line
+	3350 2725 2450 2725
+Wire Wire Line
+	2450 2725 2450 1950
+Connection ~ 2450 1950
+Wire Wire Line
+	3350 2825 2425 2825
+Wire Wire Line
+	2425 2825 2425 2050
+Connection ~ 2425 2050
+Wire Wire Line
+	3350 2925 2400 2925
+Wire Wire Line
+	2400 2925 2400 2150
+Connection ~ 2400 2150
+Wire Wire Line
+	3350 3025 2375 3025
+Wire Wire Line
+	2375 3025 2375 2250
+Connection ~ 2375 2250
+Wire Wire Line
+	3350 3225 2350 3225
+Wire Wire Line
+	2350 3225 2350 2350
+Connection ~ 2350 2350
+Wire Wire Line
+	3350 3325 2325 3325
+Wire Wire Line
+	2325 3325 2325 2450
+Connection ~ 2325 2450
+Wire Wire Line
+	3350 3425 2300 3425
+Wire Wire Line
+	2300 3425 2300 2550
+Connection ~ 2300 2550
+Wire Wire Line
+	2025 3525 3350 3525
+Wire Wire Line
+	2275 3525 2275 2650
+Connection ~ 2275 2650
+Wire Wire Line
+	4300 1425 5125 1425
+Wire Wire Line
+	5125 1425 5125 1900
+Wire Wire Line
+	5125 1900 5400 1900
+Wire Wire Line
+	4300 1525 5050 1525
+Wire Wire Line
+	5050 1525 5050 2000
+Wire Wire Line
+	5050 2000 5400 2000
+Wire Wire Line
+	4300 1625 5000 1625
+Wire Wire Line
+	5000 1625 5000 2100
+Wire Wire Line
+	5000 2100 5400 2100
+Wire Wire Line
+	4300 1725 4900 1725
+Wire Wire Line
+	4900 1725 4900 2200
+Wire Wire Line
+	4900 2200 5400 2200
+Wire Wire Line
+	4300 1825 4825 1825
+Wire Wire Line
+	4825 1825 4825 2300
+Wire Wire Line
+	4825 2300 5400 2300
+Wire Wire Line
+	4300 1925 4775 1925
+Wire Wire Line
+	4775 1925 4775 2400
+Wire Wire Line
+	4775 2400 5400 2400
+Wire Wire Line
+	4300 2025 4750 2025
+Wire Wire Line
+	4750 2025 4750 2500
+Wire Wire Line
+	4750 2500 5400 2500
+Wire Wire Line
+	4300 2125 4675 2125
+Wire Wire Line
+	4675 2125 4675 2600
+Wire Wire Line
+	4675 2600 5400 2600
+Wire Wire Line
+	4300 2225 4525 2225
+Wire Wire Line
+	4525 2225 4525 2700
+Wire Wire Line
+	4525 2700 5400 2700
+Wire Wire Line
+	4150 2725 4525 2725
+Wire Wire Line
+	4525 2725 4525 1425
+Connection ~ 4525 1425
+Wire Wire Line
+	4150 2825 4600 2825
+Wire Wire Line
+	4600 2825 4600 1525
+Connection ~ 4600 1525
+Wire Wire Line
+	4150 2925 4675 2925
+Wire Wire Line
+	4675 2925 4675 1625
+Connection ~ 4675 1625
+Wire Wire Line
+	4150 3025 4775 3025
+Wire Wire Line
+	4775 3025 4775 1725
+Connection ~ 4775 1725
+Wire Wire Line
+	4150 3225 4875 3225
+Wire Wire Line
+	4875 3225 4875 2300
+Connection ~ 4875 2300
+Wire Wire Line
+	4150 3325 4925 3325
+Wire Wire Line
+	4925 3325 4925 2400
+Connection ~ 4925 2400
+Wire Wire Line
+	4150 3425 4975 3425
+Wire Wire Line
+	4975 3425 4975 2500
+Connection ~ 4975 2500
+Connection ~ 5025 2600
+Wire Wire Line
+	4150 3525 5025 3525
+Wire Wire Line
+	5025 3525 5025 2600
+$Comp
+L MIC2981 U1
+U 1 1 5ABE9523
+P 3800 1725
+F 0 "U1" H 3770 2285 50  0000 L CNN
+F 1 "MIC2981" H 3680 2185 50  0000 L CNN
+F 2 "Housings_SOIC:SOIC-18W_7.5x11.6mm_Pitch1.27mm" H 3810 1295 50  0001 C CIN
+F 3 "" H 3810 1295 50  0001 C CNN
+	1    3800 1725
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 5ABE96B5
+P 3125 3600
+F 0 "#PWR01" H 3125 3350 50  0001 C CNN
+F 1 "GND" H 3125 3450 50  0000 C CNN
+F 2 "" H 3125 3600 50  0001 C CNN
+F 3 "" H 3125 3600 50  0001 C CNN
+	1    3125 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3125 3600 3125 3525
+Connection ~ 3125 3525
+$Comp
+L PWR_FLAG #FLG02
+U 1 1 5ABE9758
+P 2025 3450
+F 0 "#FLG02" H 2025 3525 50  0001 C CNN
+F 1 "PWR_FLAG" H 2025 3600 50  0000 C CNN
+F 2 "" H 2025 3450 50  0001 C CNN
+F 3 "" H 2025 3450 50  0001 C CNN
+	1    2025 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2025 3450 2025 3525
+Connection ~ 2275 3525
+$Comp
+L PWR_FLAG #FLG03
+U 1 1 5ABE9800
+P 4975 1250
+F 0 "#FLG03" H 4975 1325 50  0001 C CNN
+F 1 "PWR_FLAG" H 4975 1400 50  0000 C CNN
+F 2 "" H 4975 1250 50  0001 C CNN
+F 3 "" H 4975 1250 50  0001 C CNN
+	1    4975 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG04
+U 1 1 5ABE9824
+P 3300 2375
+F 0 "#FLG04" H 3300 2450 50  0001 C CNN
+F 1 "PWR_FLAG" H 3300 2525 50  0000 C CNN
+F 2 "" H 3300 2375 50  0001 C CNN
+F 3 "" H 3300 2375 50  0001 C CNN
+	1    3300 2375
+	-1   0    0    1   
+$EndComp
+$Comp
+L PWR_FLAG #FLG05
+U 1 1 5ABE9844
+P 4225 2600
+F 0 "#FLG05" H 4225 2675 50  0001 C CNN
+F 1 "PWR_FLAG" H 4225 2750 50  0000 C CNN
+F 2 "" H 4225 2600 50  0001 C CNN
+F 3 "" H 4225 2600 50  0001 C CNN
+	1    4225 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4975 1250 4975 1425
+Connection ~ 4975 1425
+Wire Wire Line
+	4225 2600 4225 2725
+Connection ~ 4225 2725
+Wire Wire Line
+	3300 2375 3300 2225
+Connection ~ 3300 2225
+$EndSCHEMATC
