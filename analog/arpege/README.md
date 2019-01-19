@@ -6,5 +6,5 @@ This is purely for information and for historical purpose - so that owners of th
 
 No guarantee is given whatsoever regarding the accuracy of the schematic (but I've done my best)
 
-
+![the Schematic](./arpege.png?raw=true "Schema")
 
