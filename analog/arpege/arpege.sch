@@ -1232,7 +1232,7 @@ Text Notes 6950 5250 0    50   ~ 0
 Summing amp
 Text Notes 6950 4200 0    50   ~ 0
 non-inverter\ngain = 2
-Text Notes 4400 4550 0    50   ~ 0
+Text Notes 3950 4500 0    50   ~ 0
 EQ  (Notch filter ?)\n(to be analyzed)
 Text Notes 4500 5300 0    50   ~ 0
 Differential
