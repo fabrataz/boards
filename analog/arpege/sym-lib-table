@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name arpege-rescue)(type Legacy)(uri ${KIPRJMOD}/arpege-rescue.lib)(options "")(descr ""))
-)
