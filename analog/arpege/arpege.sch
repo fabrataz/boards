@@ -17,17 +17,6 @@ $EndDescr
 Text Notes 7000 6800 0    50   ~ 0
 Arpege V6E active preamp circuit\n2019-01 V1.0\nfrom Passion II (#110)\n
 $Comp
-L Device:Battery BT1
-U 1 1 5C31AA7D
-P 9800 1150
-F 0 "BT1" H 9908 1196 50  0000 L CNN
-F 1 "Battery" H 9908 1105 50  0000 L CNN
-F 2 "" V 9800 1210 50  0001 C CNN
-F 3 "~" V 9800 1210 50  0001 C CNN
-	1    9800 1150
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_POT RV3
 U 1 1 5C31ACBC
 P 7900 2350
@@ -49,8 +38,6 @@ F 3 "~" H 8850 1100 50  0001 C CNN
 	1    8850 1100
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	9800 950  9800 900 
 $Comp
 L arpege-rescue:+18V-power #PWR012
 U 1 1 5C31BE2B
@@ -264,12 +251,12 @@ $Comp
 L Switch:SW_SPDT SW2
 U 1 1 5C31D5B5
 P 6400 1750
-F 0 "SW2" H 6400 1425 50  0000 C CNN
+F 0 "SW2" H 6400 1450 50  0000 C CNN
 F 1 "SW_SPDT" H 6400 1516 50  0000 C CNN
 F 2 "" H 6400 1750 50  0001 C CNN
 F 3 "" H 6400 1750 50  0001 C CNN
 	1    6400 1750
-	-1   0    0    1   
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:R R4
@@ -353,7 +340,7 @@ L Device:R_POT_Dual RV2
 U 1 1 5C31DE77
 P 3800 1600
 F 0 "RV2" H 3800 1275 50  0000 C CNN
-F 1 "R_POT_Dual" H 3800 1366 50  0000 C CNN
+F 1 "100k DUAL POT" H 3800 1366 50  0000 C CNN
 F 2 "" H 4050 1525 50  0001 C CNN
 F 3 "~" H 4050 1525 50  0001 C CNN
 	1    3800 1600
@@ -364,7 +351,7 @@ L Device:Microphone MK1
 U 1 1 5C31E2E9
 P 5350 1450
 F 0 "MK1" V 5083 1450 50  0000 C CNN
-F 1 "Microphone" V 5174 1450 50  0000 C CNN
+F 1 "Neck" V 5174 1450 50  0000 C CNN
 F 2 "" V 5350 1550 50  0001 C CNN
 F 3 "~" V 5350 1550 50  0001 C CNN
 	1    5350 1450
@@ -375,22 +362,11 @@ L Device:Microphone MK2
 U 1 1 5C31E3D9
 P 5350 2100
 F 0 "MK2" V 5083 2100 50  0000 C CNN
-F 1 "Microphone" V 5174 2100 50  0000 C CNN
+F 1 "Bridge" V 5174 2100 50  0000 C CNN
 F 2 "" V 5350 2200 50  0001 C CNN
 F 3 "~" V 5350 2200 50  0001 C CNN
 	1    5350 2100
 	0    1    1    0   
-$EndComp
-$Comp
-L Connector:AudioJack3 J4
-U 1 1 5C31E95E
-P 9850 1900
-F 0 "J4" H 9570 1833 50  0000 R CNN
-F 1 "AudioJack3" H 9570 1924 50  0000 R CNN
-F 2 "" H 9850 1900 50  0001 C CNN
-F 3 "~" H 9850 1900 50  0001 C CNN
-	1    9850 1900
-	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR05
@@ -403,28 +379,18 @@ F 3 "" H 3850 2200 50  0001 C CNN
 	1    3850 2200
 	1    0    0    -1  
 $EndComp
-Text Notes 9450 1900 0    50   ~ 0
-brown
-Text Notes 9450 2000 0    50   ~ 0
-black
-Text Notes 9450 1800 0    50   ~ 0
-yellow
+Text Notes 9950 1900 0    50   ~ 0
+brown - to JACK RING 
+Text Notes 9950 2000 0    50   ~ 0
+black -> BAT- and JACK SHIELD
+Text Notes 9950 1800 0    50   ~ 0
+yellow (AUDIO OUT) - to JACK TIP
 Wire Wire Line
 	9800 1350 9800 1600
 Wire Wire Line
-	9800 1600 9500 1600
-Wire Wire Line
-	9500 1600 9500 2000
-Wire Wire Line
-	9200 1800 9200 1900
+	9800 1600 9650 1600
 Wire Wire Line
 	9650 1900 9400 1900
-Wire Wire Line
-	9400 1750 9150 1750
-Wire Wire Line
-	9150 1750 9150 1800
-Wire Wire Line
-	9150 1800 9000 1800
 Wire Wire Line
 	9400 1350 8850 1350
 Wire Wire Line
@@ -432,21 +398,16 @@ Wire Wire Line
 $Comp
 L power:Earth #PWR011
 U 1 1 5C3212CD
-P 9100 2100
-F 0 "#PWR011" H 9100 1850 50  0001 C CNN
-F 1 "Earth" H 9100 1950 50  0001 C CNN
-F 2 "" H 9100 2100 50  0001 C CNN
-F 3 "~" H 9100 2100 50  0001 C CNN
-	1    9100 2100
+P 9300 3050
+F 0 "#PWR011" H 9300 2800 50  0001 C CNN
+F 1 "Earth" H 9300 2900 50  0001 C CNN
+F 2 "" H 9300 3050 50  0001 C CNN
+F 3 "~" H 9300 3050 50  0001 C CNN
+	1    9300 3050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9000 2000 9100 2000
-Wire Wire Line
-	9100 2000 9100 2100
-Text Notes 8750 2150 0    50   ~ 0
-(shielding - pickups & tremolo)
-Connection ~ 9100 2000
+Text Notes 9500 3200 0    50   ~ 0
+Shielding wire to tremolo (black)
 $Comp
 L power:GND #PWR09
 U 1 1 5C3222EF
@@ -606,26 +567,20 @@ $EndComp
 Wire Wire Line
 	1550 1500 1550 1600
 Wire Wire Line
-	9800 900  9550 900 
-Connection ~ 9800 900 
-Wire Wire Line
 	9800 900  9800 850 
-Text Notes 9300 900  0    50   ~ 0
-red
+Text Notes 9950 1600 0    50   ~ 0
+red -> BAT+ (18V)
 $Comp
 L power:PWR_FLAG #FLG02
 U 1 1 5C342F20
-P 9550 900
-F 0 "#FLG02" H 9550 975 50  0001 C CNN
-F 1 "PWR_FLAG" H 9550 1074 50  0000 C CNN
-F 2 "" H 9550 900 50  0001 C CNN
-F 3 "~" H 9550 900 50  0001 C CNN
-	1    9550 900 
+P 9300 900
+F 0 "#FLG02" H 9300 975 50  0001 C CNN
+F 1 "PWR_FLAG" H 9300 1074 50  0000 C CNN
+F 2 "" H 9300 900 50  0001 C CNN
+F 3 "~" H 9300 900 50  0001 C CNN
+	1    9300 900 
 	1    0    0    -1  
 $EndComp
-Connection ~ 9550 900 
-Wire Wire Line
-	9550 900  9300 900 
 $Comp
 L power:PWR_FLAG #FLG01
 U 1 1 5C342FD2
@@ -850,18 +805,16 @@ Connection ~ 5950 3150
 $Comp
 L Connector_Generic:Conn_01x06 J3
 U 1 1 5C469EF8
-P 8800 1800
-F 0 "J3" H 8720 1275 50  0000 C CNN
-F 1 "Conn_01x06" H 8720 1366 50  0000 C CNN
-F 2 "" H 8800 1800 50  0001 C CNN
-F 3 "~" H 8800 1800 50  0001 C CNN
-	1    8800 1800
-	-1   0    0    1   
+P 9850 1800
+F 0 "J3" H 9770 1275 50  0000 C CNN
+F 1 "Conn_01x06" H 9770 1366 50  0000 C CNN
+F 2 "" H 9850 1800 50  0001 C CNN
+F 3 "~" H 9850 1800 50  0001 C CNN
+	1    9850 1800
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	9300 900  9300 1600
-Wire Wire Line
-	9300 1600 9000 1600
 Wire Wire Line
 	3600 3400 3450 3400
 $Comp
@@ -920,8 +873,8 @@ Wire Wire Line
 Connection ~ 3700 2750
 Wire Wire Line
 	1650 4350 1500 4350
-NoConn ~ 9000 1700
-NoConn ~ 9000 1500
+NoConn ~ 9650 1700
+NoConn ~ 9650 1500
 $Comp
 L Amplifier_Operational:TL062 U1
 U 1 1 5C44516D
@@ -1046,8 +999,6 @@ Wire Wire Line
 	8200 2700 8200 2850
 Text Label 7250 2050 0    50   ~ 0
 Sig-IN
-Wire Wire Line
-	9000 1900 9200 1900
 Wire Wire Line
 	1700 6650 1700 6600
 Wire Wire Line
@@ -1183,19 +1134,18 @@ VOL
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5CAD682B
-P 5000 1450
-F 0 "#FLG0101" H 5000 1525 50  0001 C CNN
-F 1 "PWR_FLAG" H 5000 1624 50  0000 C CNN
-F 2 "" H 5000 1450 50  0001 C CNN
-F 3 "~" H 5000 1450 50  0001 C CNN
-	1    5000 1450
+P 9300 2000
+F 0 "#FLG0101" H 9300 2075 50  0001 C CNN
+F 1 "PWR_FLAG" H 9300 2174 50  0000 C CNN
+F 2 "" H 9300 2000 50  0001 C CNN
+F 3 "~" H 9300 2000 50  0001 C CNN
+	1    9300 2000
 	1    0    0    -1  
 $EndComp
-Connection ~ 5000 1450
-Text Notes 9550 1550 0    50   ~ 0
-when closed, bat negative is \nconnected to circuit ground
-Text Notes 3000 1000 0    50   ~ 0
-Parametric EQ \n(Freq 80 - 5200 Hz to be confirmed)
+Text Notes 9700 2600 0    50   ~ 0
+Use Stereo JACK (Female): \nwhen male Jack is inserted, BAT- is \nconnected to circuit ground (brown)
+Text Notes 3100 1050 0    50   ~ 0
+Parametric EQ \n(Freq 80 - 5200 Hz to be confirmed\nCalculation freq = 1/(2*Pi*R*C) = 46  - 3120 Hz 
 Text Notes 900  2200 0    50   ~ 0
 Parametric EQ\nGain +15dB / off / -15dB
 Wire Wire Line
@@ -1248,11 +1198,6 @@ Connection ~ 1700 4750
 Wire Wire Line
 	1700 4750 2050 4750
 Wire Wire Line
-	9850 2250 9200 2250
-Wire Wire Line
-	9200 2250 9200 1900
-Connection ~ 9200 1900
-Wire Wire Line
 	1150 4750 1000 4750
 Wire Wire Line
 	1000 4750 1000 6600
@@ -1261,23 +1206,41 @@ Wire Wire Line
 Connection ~ 1700 6600
 Wire Wire Line
 	1700 6600 1700 6550
-Wire Wire Line
-	9100 2000 9500 2000
-Wire Wire Line
-	9400 1750 9400 1350
-Wire Wire Line
-	9400 1900 9400 1750
-Connection ~ 9400 1750
-Connection ~ 9500 2000
-Wire Wire Line
-	9500 2000 9650 2000
 Connection ~ 8550 1350
 Wire Wire Line
 	8550 1350 8550 1400
 Wire Wire Line
-	1850 6400 9850 6400
-Wire Wire Line
-	9850 2250 9850 6400
-Text Notes 5950 2050 0    50   ~ 0
+	1850 6400 9200 6400
+Text Notes 6150 1550 0    50   ~ 0
 Pickup Selector
+Wire Wire Line
+	9650 1600 9300 1600
+Connection ~ 9650 1600
+Wire Wire Line
+	9400 1350 9400 1900
+Wire Wire Line
+	9200 1800 9200 6400
+$Comp
+L Connector_Generic:Conn_01x01 J4
+U 1 1 5C5212B1
+P 9900 3000
+F 0 "J4" H 9980 3042 50  0000 L CNN
+F 1 "Conn_01x01" H 9980 2951 50  0000 L CNN
+F 2 "" H 9900 3000 50  0001 C CNN
+F 3 "~" H 9900 3000 50  0001 C CNN
+	1    9900 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 900  9800 900 
+Wire Wire Line
+	9300 2000 9650 2000
+Wire Wire Line
+	9700 3000 9300 3000
+Wire Wire Line
+	9300 3000 9300 2000
+Connection ~ 9300 2000
+Wire Wire Line
+	9300 3050 9300 3000
+Connection ~ 9300 3000
 $EndSCHEMATC
