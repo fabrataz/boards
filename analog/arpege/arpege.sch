@@ -14,8 +14,8 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes 7000 6800 0    50   ~ 0
-Arpege V6E active preamp circuit\n2019-01 V1.0\nfrom Passion II (#110)\n
+Text Notes 9900 6950 0    50   ~ 0
+Arpege V6E active preamp circuit\n2019-01 V1.0\nfrom Passion Guitar\nLong Live Mr GV\n
 $Comp
 L Device:R_POT RV3
 U 1 1 5C31ACBC
@@ -407,7 +407,7 @@ F 3 "~" H 9300 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 9500 3200 0    50   ~ 0
-Shielding wire to tremolo (black)
+Shielding - wire to tremolo (black)
 $Comp
 L power:GND #PWR09
 U 1 1 5C3222EF
@@ -1070,10 +1070,6 @@ Wire Wire Line
 Wire Wire Line
 	3700 1500 3700 2350
 Wire Wire Line
-	2000 5850 2000 5500
-Wire Wire Line
-	2000 5500 2700 5500
-Wire Wire Line
 	2700 5500 2700 6200
 Wire Wire Line
 	2700 6200 8200 6200
@@ -1083,11 +1079,11 @@ Wire Wire Line
 	8200 3750 7450 3750
 Connection ~ 7450 3750
 Wire Wire Line
-	2000 5950 1900 5950
+	2000 5950 1850 5950
 Wire Wire Line
-	1900 5950 1900 6100
+	1850 5950 1850 6100
 Wire Wire Line
-	1900 6100 5700 6100
+	1850 6100 5700 6100
 Wire Wire Line
 	5700 6100 5700 5750
 Wire Wire Line
@@ -1243,4 +1239,20 @@ Connection ~ 9300 2000
 Wire Wire Line
 	9300 3050 9300 3000
 Connection ~ 9300 3000
+Text Notes 4650 2300 0    50   ~ 0
+Shield - wire pickups
+Text Notes 1850 5850 0    50   ~ 0
+B11
+Text Notes 1850 5950 0    50   ~ 0
+B12
+Text Notes 3050 5850 0    50   ~ 0
+B21
+Text Notes 3050 5950 0    50   ~ 0
+B22
+Wire Wire Line
+	2000 5850 1850 5850
+Wire Wire Line
+	1850 5850 1850 5500
+Wire Wire Line
+	1850 5500 2700 5500
 $EndSCHEMATC
