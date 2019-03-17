@@ -21,7 +21,7 @@ L Device:R_POT RV3
 U 1 1 5C31ACBC
 P 7900 2350
 F 0 "RV3" V 7693 2350 50  0000 C CNN
-F 1 "470kB" V 7784 2350 50  0000 C CNN
+F 1 "470kA" V 7784 2350 50  0000 C CNN
 F 2 "" H 7900 2350 50  0001 C CNN
 F 3 "~" H 7900 2350 50  0001 C CNN
 	1    7900 2350
@@ -340,7 +340,7 @@ L Device:R_POT_Dual RV2
 U 1 1 5C31DE77
 P 3800 1600
 F 0 "RV2" H 3800 1275 50  0000 C CNN
-F 1 "100k DUAL POT" H 3800 1366 50  0000 C CNN
+F 1 "100k A Dual POT" H 3800 1366 50  0000 C CNN
 F 2 "" H 4050 1525 50  0001 C CNN
 F 3 "~" H 4050 1525 50  0001 C CNN
 	1    3800 1600
@@ -1143,7 +1143,7 @@ Use Stereo JACK (Female): \nwhen male Jack is inserted, BAT- is \nconnected to c
 Text Notes 3100 1050 0    50   ~ 0
 Parametric EQ \n(Freq 80 - 5200 Hz to be confirmed\nCalculation freq = 1/(2*Pi*R*C) = 46  - 3120 Hz 
 Text Notes 900  2200 0    50   ~ 0
-Parametric EQ\nGain +15dB / off / -15dB
+Parametric EQ\n(Q factor or Gain ?)
 Wire Wire Line
 	1550 900  1550 850 
 Wire Wire Line
